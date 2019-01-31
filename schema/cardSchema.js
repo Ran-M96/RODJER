@@ -3,24 +3,15 @@ const mongoose = require('mongoose');
 
 // Exemples du tutoriel
 var cardSchema = mongoose.Schema({
-    email: {
+    title:{
         type: String,
-        lowercase: true,
-        trim: true,
-        unique: true,
         required: true
     },
-    password: {
-        type: String,
-        required: true
-    }
 }, {
     timestamps: {createdAt: 'created_at'}
 });
 
 cardSchema.methods = {
-
-
     authenticate: function (password) {
         return passwordHash.verify(password, this.password);
     },
