@@ -3,9 +3,11 @@ import {Container, Button, Col, Row} from "react-bootstrap";
 import {InvestCarousel} from '../Carousel/InvestCarousel';
 import {ObjectCarousel} from "../Carousel/ObjectCarousel";
 import {SquadCarousel} from "../Carousel/SquadCarousel";
-import {SquadCarouselDeletable} from "../Carousel/SquadCarousel";
-import API from '../../utils/API';
 import {UsabilityCarousel} from "../Carousel/UsabilityCarousel";
+import {UserCarousel} from "../Carousel/UserCarousel";
+import {ModelCarousel} from "../Carousel/ModelCarousel";
+import {TemporalCarousel} from "../Carousel/TemporalCarousel";
+import API from '../../utils/API';
 
 export class Game extends React.Component {
     constructor(props) {
@@ -38,6 +40,7 @@ export class Game extends React.Component {
     render() {
         return (
             <Container>
+                <br/>
                 {this.state.isPlaying === false
                     ? <Button variant="outline-light" onClick={this.start.bind(this)}>Start Game</Button>
                     : <Container>
@@ -69,8 +72,8 @@ export class Game extends React.Component {
                             <SquadCarousel/><SquadCarousel/><SquadCarousel/><SquadCarousel/><SquadCarousel/><SquadCarousel/><SquadCarousel/><SquadCarousel/>
                         </div>}
                         {this.state.members !== 10 && <Col md={{span: 8, offset: 2}}>
-                            <Button variant="light" size="lg" block onClick={this.addMember.bind(this)}>
-                                Ajouter un membre à l'équipe
+                            <Button variant="outline-light" size="lg" block onClick={this.addMember.bind(this)}>
+                                + Ajouter un membre à l'équipe
                             </Button>
                         </Col>}
                         <br/>
@@ -82,10 +85,20 @@ export class Game extends React.Component {
                         {this.state.studies === 5 &&
                         <div><UsabilityCarousel/><UsabilityCarousel/><UsabilityCarousel/><UsabilityCarousel/></div>}
                         {this.state.studies !== 5 && <Col md={{span: 8, offset: 2}}>
-                            <Button variant="light" size="lg" block onClick={this.addStudy.bind(this)}>
-                                Ajouter une étude d'utilisabilité
+                            <Button variant="outline-light" size="lg" block onClick={this.addStudy.bind(this)}>
+                                + Ajouter une étude d'utilisabilité
                             </Button>
                         </Col>}
+                        <br/>
+                        <UserCarousel/>
+                        <ModelCarousel/>
+                        <TemporalCarousel/>
+                        <Col md={{span: 8, offset: 2}}>
+                            <Button variant="danger" size="lg" block>
+                                Valider le projet
+                            </Button>
+                        </Col>
+                        <br/>
                     </Container>
                 }
             </Container>
