@@ -36,6 +36,43 @@ export class Game extends React.Component {
             directionUser: null,
             directionModel: null,
             directionTemporal: null,
+            priceInvest: [
+                {price: 200000, handicap: 0.2},
+                {price: 350000, handicap: 0.4},
+                {price: 100000, handicap: 0}
+            ],
+            priceSquad: [
+                {price: 3000},
+                {price: 7000},
+                {price: 4000},
+                {price: 1500},
+                {price: 3000},
+                {price: 3500}
+            ],
+            priceUsability: [
+                {price: 15000},
+                {price: 20000},
+                {price: 12000}
+            ],
+            priceUser: [
+                {price: 40000},
+                {price: 55000},
+                {price: 30000},
+                {price: 10000},
+                {price: 15000}
+            ],
+            priceModel: [
+                {price: 20000},
+                {price: 10000},
+                {price: 30000},
+                {price: 10000},
+                {price: 15000}
+            ],
+            temporal: [
+                {temp: 6},
+                {temp: 12},
+                {temp: 24}
+            ]
         };
         this.handleSelectInvest = this.handleSelectInvest.bind(this);
         this.handleSelectObject = this.handleSelectObject.bind(this);
@@ -50,6 +87,10 @@ export class Game extends React.Component {
         this.handleSelectUser = this.handleSelectUser.bind(this);
         this.handleSelectModel = this.handleSelectModel.bind(this);
         this.handleSelectTemporal = this.handleSelectTemporal.bind(this);
+    }
+
+    componentDidMount() {
+        console.log(this.state.priceInvest[this.state.indexInvest].price)
     }
 
     start() {
@@ -175,7 +216,7 @@ export class Game extends React.Component {
     }
 
     calculateViability() {
-        console.log('calculateViability');
+        this.calculatePrice();
         let invest = 0;
         let user = 0;
         let model = 0;
@@ -184,10 +225,8 @@ export class Game extends React.Component {
         let usability = 0;
         switch (this.state.indexObject) {
             case 0:
-                console.log('calculateViability2');
                 switch (this.state.indexInvest) {
                     case 0:
-                        console.log('calculateViability3');
                         invest = 1;
                 }
                 switch (this.state.indexUser) {
@@ -243,7 +282,7 @@ export class Game extends React.Component {
                 if (usability > 1) {
                     usability = 1;
                 }
-                console.log('Viabilité : '+invest * user * usability * model * team * time);
+                console.log('Viabilité : ' + invest * user * usability * model * team * time);
                 return (invest * user * usability * model * team * time);
             case 1:
                 return null;
@@ -253,6 +292,63 @@ export class Game extends React.Component {
                 return null;
         }
 
+    }
+
+    calculatePrice() {
+        let invest = this.state.priceInvest[this.state.indexInvest].price;
+        let squad1 = this.state.priceSquad[this.state.indexSquad1].price;
+        let squad2 = 0;
+        let squad3 = 0;
+        let squad4 = 0;
+        let squad5 = 0;
+        if (this.state.members > 1) {
+            if (this.state.members > 2) {
+                if (this.state.members > 3) {
+                    if (this.state.members > 4) {
+                        squad2 = this.state.priceSquad[this.state.indexSquad2].price;
+                        squad3 = this.state.priceSquad[this.state.indexSquad3].price;
+                        squad4 = this.state.priceSquad[this.state.indexSquad4].price;
+                        squad5 = this.state.priceSquad[this.state.indexSquad5].price;
+                    } else {
+                        squad2 = this.state.priceSquad[this.state.indexSquad2].price;
+                        squad3 = this.state.priceSquad[this.state.indexSquad3].price;
+                        squad4 = this.state.priceSquad[this.state.indexSquad4].price;
+                    }
+                } else {
+                    squad2 = this.state.priceSquad[this.state.indexSquad2].price;
+                    squad3 = this.state.priceSquad[this.state.indexSquad3].price;
+                }
+            } else {
+                squad2 = this.state.priceSquad[this.state.indexSquad2].price;
+            }
+        }
+        let temporal = this.state.temporal[this.state.indexTemporal].temp;
+        let utility1 = this.state.priceUsability[this.state.indexUsability1].price;
+        let utility2 = 0;
+        let utility3 = 0;
+        if (this.state.studies > 1) {
+            if (this.state.studies > 2) {
+                utility2 = this.state.priceUsability[this.state.indexUsability2].price;
+                utility3 = this.state.priceUsability[this.state.indexUsability3].price
+            } else {
+                utility2 = this.state.priceUsability[this.state.indexUsability2].price
+            }
+        }
+        let user = this.state.priceUser[this.state.indexUser].price;
+        let model = this.state.priceModel[this.state.indexModel].price;
+        console.log('invest ' + invest);
+        console.log('squad1 ' + squad1);
+        console.log('squad2 ' + squad2);
+        console.log('squad3 ' + squad3);
+        console.log('squad4 ' + squad4);
+        console.log('squad5 ' + squad5);
+        console.log('temporal ' + temporal);
+        console.log('utility1 ' + utility1);
+        console.log('utility2 ' + utility2);
+        console.log('utility3 ' + utility3);
+        console.log('user ' + user);
+        console.log('model' + model);
+        console.log(invest - squad1 * temporal - squad2 * temporal - squad3 * temporal - squad4 * temporal - squad5 * temporal - utility1 - utility2 - utility3 - user - model)
     }
 
     render() {
