@@ -13,7 +13,8 @@ export class ObjectCarousel extends React.Component {
 
     render() {
         return (
-            <Carousel interval={null}>
+            <Carousel interval={null} activeIndex={this.props.activeIndex} direction={this.props.direction}
+                onSelect={this.props.onSelect}>
                 <Carousel.Item>
                     <Container>
                         <Col md={{span: 8, offset: 2}}>
