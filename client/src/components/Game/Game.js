@@ -578,7 +578,7 @@ export class Game extends React.Component {
                     ? this.state.isSubmitted === true
                         ? <Container style={{height: '100vh', minHeight: '100vh'}}>
                             <Col md={{span: 8, offset: 2}}>
-                                {this.state.viability > 0.5
+                                {this.state.viability > 0.2
                                     ? this.state.total + this.state.gain > 0
                                         ? <Card>
                                             <Card.Header>Votre projet est viable, et rentable !
