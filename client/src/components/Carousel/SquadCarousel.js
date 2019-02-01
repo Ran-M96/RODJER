@@ -93,13 +93,8 @@ export class SquadCarousel extends React.Component {
                                             </Col>
                                         </Card.Text>
                                         <Card.Text>
-                                            La love money correspond à l'investissement personnel ainsi que de la
-                                            famille et
-                                            des
-                                            amis. Elle est sans aucun retour, on l'appelle l'investissement des trois F
-                                            :
-                                            Family,
-                                            Friends and Fools.
+                                            Expert polyvalent, permettant l'adaptation du produit aux besoin de l'utilisateur.
+                                            Son expertise est très apprécier et extrêment valorisante dans tous projets.
                                         </Card.Text>
                                         <br/>
                                     </Card.Body>
