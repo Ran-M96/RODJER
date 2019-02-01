@@ -602,7 +602,7 @@ export class Game extends React.Component {
                                         </Card.Header>
                                         <Card.Body>
                                             Vous avez choisi un certain nombre, d'éléments qui ne sont soit pas
-                                            compatibles ou ne sont pas cohérent entre eux avec votre projet.
+                                            compatibles ou ne sont pas cohérents avec votre projet.
                                             Retentez l'expérience !
                                         </Card.Body>
                                     </Card>
@@ -620,7 +620,7 @@ export class Game extends React.Component {
                                         notre
                                         formation, vous n'en avez pas forcément conscience mais à chaque instant dans
                                         les
-                                        projets importants, les professeurs nous test et test la robustesse de ces
+                                        projets importants, les professeurs nous testent et testent la robustesse de ces
                                         projets
                                         ainsi que leurs potentiels finalités. Dans le cadre d'une approche plus complète
                                         nous allons vous donner les clés pour évaluer un projet non pas étudiant cette
@@ -633,12 +633,12 @@ export class Game extends React.Component {
                                             un
                                             projet innovant qu'il faudra mener à bien, en choisissant un moyen de
                                             financement
-                                            adapté, en choisissant des collaborateurs performants, en diligeantant des
+                                            adapté, en choisissant des collaborateurs performants, en diligentant des
                                             études
                                             permettant de déterminer la viabilité du produit, en choisissant une
                                             temporalité
                                             idéale, une population cible cohérente avec le projet ainsi qu'un modèle
-                                            économic
+                                            économique
                                             cohérent. Faites cependant attention à bien répartir vos finances pour
                                             permettre
                                             à
