@@ -31,9 +31,9 @@ export class SquadCarousel extends React.Component {
                                             </Col>
                                         </Card.Text>
                                         <Card.Text>
-                                            Expert des sciences dure, l'ingénieur à une vision très spécialisé du projet
+                                            Expert des sciences dures, l'ingénieur a une vision très spécialisée du projet
                                             et est un atout obligatoire pour l'ensemble des projets scientifiques
-                                            publique ou privés.
+                                            publiques ou privés.
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
@@ -61,7 +61,7 @@ export class SquadCarousel extends React.Component {
                                             </Col>
                                         </Card.Text>
                                         <Card.Text>
-                                            Expert des sciences dure, l'ingénieur à une vision très spécialisé du
+                                            Expert des sciences dures, l'ingénieur a une vision très spécialisée du
                                             projet. L'ingénieur confirmé est plus cher que l'ingénieur, mais son
                                             expertise est indispensable dans les projets d'envergure à haute valeur
                                             technologique.
@@ -96,7 +96,7 @@ export class SquadCarousel extends React.Component {
                                             La love money correspond à l'investissement personnel ainsi que de la
                                             famille et
                                             des
-                                            amis. Elle est sans aucun retours, on l'appelle l'investissement des trois F
+                                            amis. Elle est sans aucun retour, on l'appelle l'investissement des trois F
                                             :
                                             Family,
                                             Friends and Fools.
