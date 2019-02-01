@@ -61,8 +61,8 @@ export class UserCarousel extends React.Component {
                                             </Col>
                                         </Card.Text>
                                         <Card.Text>
-                                            La mise en place d'un dispositif pour les services public est long et
-                                            compliqué mais les gains potentiels sont substantiels.
+                                            La mise en place d'un dispositif pour les services publiques est longue et
+                                            compliquée mais les gains potentiels sont substantiels.
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
@@ -90,7 +90,7 @@ export class UserCarousel extends React.Component {
                                             </Col>
                                         </Card.Text>
                                         <Card.Text>
-                                            Cette catégories est l'une des catégories spécialités les plus difficiles à
+                                            Cette catégories est l'une des catégories les plus difficiles à
                                             cibler, en effet l'achat n'est pas effectué par la catégorie mais par leurs
                                             parents.
                                         </Card.Text>
