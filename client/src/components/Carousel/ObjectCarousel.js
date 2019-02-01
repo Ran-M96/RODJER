@@ -57,7 +57,7 @@ export class ObjectCarousel extends React.Component {
                                     <Card.Header>Projet</Card.Header>
                                     <Card.Body>
                                         <Card.Title>Apprentissage fédéré pour l'acquisiton de motifs de marche avec
-                                            semelles connectés sur une application dédiée</Card.Title>
+                                            semelles connectées sur une application dédiée</Card.Title>
                                         <Card.Text>
                                             <Col>
                                                 <i>Projet d'innovation privé</i>
@@ -92,7 +92,7 @@ export class ObjectCarousel extends React.Component {
                                 <Card className="text-center">
                                     <Card.Header>Projet</Card.Header>
                                     <Card.Body>
-                                        <Card.Title>Détections de mines terrestre grâce à l'apprentissage profond sur
+                                        <Card.Title>Détections de mines terrestres grâce à l'apprentissage profond sur
                                             des données issues d'un Lidar sur les terrains de guerre</Card.Title>
                                         <Card.Text>
                                             <Col>
@@ -105,7 +105,7 @@ export class ObjectCarousel extends React.Component {
                                             </Col>
                                         </Card.Text>
                                         <Card.Text>
-                                            Ce projet permettrait de déterminer les zones qui ont étés minés pendants
+                                            Ce projet permettrait de déterminer les zones qui ont étés minés pendant
                                             les conflits avec précision et d'en dresser une carte détaillée.
                                         </Card.Text>
                                         <br/>
@@ -127,11 +127,11 @@ export class ObjectCarousel extends React.Component {
                                     <Card.Header>Projet</Card.Header>
                                     <Card.Body>
                                         <Card.Title>Application permettant la publication et la correction par des pairs
-                                            d'article scientifique de façon anonyme mais contrôlé
+                                            d'articles scientifiques de façon anonyme mais contrôlée
                                             informatiquement</Card.Title>
                                         <Card.Text>
                                             <Col>
-                                                <i>Projet d'innovation privée</i>
+                                                <i>Projet d'innovation privé</i>
                                             </Col>
                                             <Col>
                                                 <Badge pill variant="secondary">
@@ -141,7 +141,7 @@ export class ObjectCarousel extends React.Component {
                                         </Card.Text>
                                         <Card.Text>
                                             Ce projet permettrait de se passer des éditeurs scientifiques qui vendent
-                                            les articles scientifiques ceci dans le but de permettre une gratuité
+                                            les articles scientifiques, ceci dans le but de permettre une gratuité
                                             d'accès à la recherche.
                                         </Card.Text>
                                         <br/>
