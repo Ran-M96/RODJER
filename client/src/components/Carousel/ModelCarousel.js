@@ -33,7 +33,7 @@ export class ModelCarousel extends React.Component {
                                         </Card.Text>
                                         <Card.Text>
                                             Catégorie en pleine expansion, permettant de faire découvrir l'application
-                                            gratuitement et d'accéder aux fonctionnalités plus importante de façon
+                                            gratuitement et d'accéder aux fonctionnalités plus importantes de façon
                                             payante. ex : Spotify.
                                         </Card.Text>
                                     </Card.Body>
@@ -63,8 +63,8 @@ export class ModelCarousel extends React.Component {
                                         </Card.Text>
                                         <Card.Text>
                                             Catégorie intéressante pour être indépendant financièrement et éviter
-                                            certains modèle considérés comme parasité, mais nécessite un projet de bien
-                                            public ayant une grande communauté d'utilisateur pour fonctionner. ex :
+                                            certains modèles considérés comme parasité, mais nécessite un projet de bien
+                                            public ayant une grande communauté d'utilisateurs pour fonctionner. ex :
                                             Wikipédia.
                                         </Card.Text>
                                     </Card.Body>
@@ -94,8 +94,8 @@ export class ModelCarousel extends React.Component {
                                         </Card.Text>
                                         <Card.Text>
                                             Permet de rentabiliser une application gratuite grâce au financement des
-                                            annonceurs. Considéré parfois comme un modèle parasite. Nécessite une grand
-                                            nombre d'utilisateur.
+                                            annonceurs. Considérée parfois comme un modèle parasite. Nécessite un grand
+                                            nombre d'utilisateurs.
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
