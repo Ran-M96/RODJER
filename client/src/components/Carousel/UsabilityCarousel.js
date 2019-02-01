@@ -34,7 +34,7 @@ export class UsabilityCarousel extends React.Component {
                                             Permet de vérifier l'adaptation du produit au client et son utilisabilité
                                             réelle. Ce type d'étude permet de faire des retours rapides et pertinents à
                                             chaque itération sur l'adéquation entre la population cible et le produit,
-                                            ainsi que supprimer les problèmes ergonomiques important retrouvés dans les
+                                            ainsi que supprimer les problèmes ergonomiques importants retrouvés dans les
                                             tests utilisateurs avant la commercialisation du produit.
                                         </Card.Text>
                                         <br/>
