@@ -61,7 +61,7 @@ export class TemporalCarousel extends React.Component {
                                         </Card.Text>
                                         <Card.Text>
                                             Cette temporalité est idéale pour des projets de moyenne envergure avec une
-                                            réalisation sans flux tendus, et un investissement moyen. Ou des projet de
+                                            réalisation sans flux tendus, et un investissement moyen ou des projet de
                                             petite envergure avec un investissement moyen.
                                         </Card.Text>
                                     </Card.Body>
@@ -91,7 +91,7 @@ export class TemporalCarousel extends React.Component {
                                         </Card.Text>
                                         <Card.Text>
                                             Cette temporalité est idéale pour des projets de très grande envergure,
-                                            potentiellement dans le domaine médicale ou dans la santé permettant
+                                            potentiellement dans le domaine médical ou dans la santé permettant
                                             d'obtenir des autorisations de mise sur le marché. Cette temporalité est
                                             aussi idéale dans le cadre de projets avec une petite équipe et des
                                             financements limités.
