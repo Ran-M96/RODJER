@@ -39,7 +39,7 @@ export class InvestCarousel extends React.Component {
                                             La banque est un investisseur loyal, son investissement est toujours
                                             inférieur à
                                             la
-                                            demande réelle, de plus les intérêts pour des prêt bancaires entreprises
+                                            demande réelle, de plus les intérêts pour des prêts bancaires entreprises
                                             sont
                                             toujours importants.
                                         </Card.Text>
@@ -77,11 +77,11 @@ export class InvestCarousel extends React.Component {
                                             Les fonds d'investissement et les business angels sont un bon moyen
                                             d'obtenir
                                             beaucoup
-                                            d'argent qui peret souvent d'aller au bout de son projet à court terme mais
+                                            d'argent qui permet souvent d'aller au bout de son projet à court terme mais
                                             la
                                             prise
                                             de
-                                            capitale réaliser est alors très importante.
+                                            capital réalisée est alors très importante.
                                         </Card.Text>
                                         <br/>
                                     </Card.Body>
@@ -115,10 +115,10 @@ export class InvestCarousel extends React.Component {
                                             </Col>
                                         </Card.Text>
                                         <Card.Text>
-                                            La love money correspond à l'investissement personnel ainsi que de la
+                                            La love money correspond à l'investissement personnel ainsi que celui de la
                                             famille et
                                             des
-                                            amis. Elle est sans aucun retours, on l'appelle l'investissement des trois F
+                                            amis. Elle est sans aucun retour, on l'appelle l'investissement des trois F
                                             :
                                             Family,
                                             Friends and Fools.
